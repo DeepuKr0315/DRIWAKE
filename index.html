@@ -33,6 +33,9 @@
 
 <body id="top">
 
+  <div id="progressbar"></div>
+  <div id="scrollpath"></div>
+
   <!-- 
     - #HEADER
   -->
@@ -56,7 +59,7 @@
 
         <ul class="navbar-list">
 
-          <li class="navbar-item">
+          <li class="navbar-item" data-text="Home">
             <a href="#home" class="navbar-link" data-nav-link>
               <span>Home</span>
 
@@ -64,15 +67,15 @@
             </a>
           </li>
 
-          <li class="navbar-item">
+          <li class="navbar-item" data-text="About Us">
             <a href="#about" class="navbar-link" data-nav-link>
-              <span>About US</span>
+              <span>About Us</span>
 
               <ion-icon name="chevron-forward"></ion-icon>
             </a>
           </li>
 
-          <li class="navbar-item">
+          <li class="navbar-item" data-text="Timeline">
             <a href="#service" class="navbar-link" data-nav-link>
               <span>Timeline</span>
 
@@ -80,14 +83,14 @@
             </a>
           </li>
 
-          <li class="navbar-item">
+          <li class="navbar-item" data-text="Login">
             <a href="login.html" class="navbar-link" data-nav-link="">
               <span>Login</span>
               <ion-icon name="chevron-forward"></ion-icon>
             </a>
           </li>
 
-          <li class="navbar-item">
+          <li class="navbar-item" data-text="Contact Us">
             <a href="#" class="navbar-link" data-nav-link>
               <span>Contact Us</span>
 
@@ -188,7 +191,7 @@
               Motive:
             </p>
 
-            <ul class="about-list">
+            <Ol class="about-list">
 
               <li class="about-item">
                 <div class="about-icon">
@@ -241,7 +244,7 @@
                   Offering instant alerts to drivers and fleet management when concerning health parameters are detected, ensuring swift action to prevent potential accidents.
                 </p>
               </li>
-              </ul>
+              </Ol>
               
 
                 <h2 class="h2 section-title">
@@ -613,7 +616,7 @@ THE SYSTEM HAS THE CAPABILITY TO SLOW DOWN THE VEHICLE'S SPEED. THIS FEATURE IS 
                   <p class="card-tag">USED COMPONENTS</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Explore Components</a>
+                    <a href="#" class="card-title" style="color: #003153;">Explore Components</a>
                   </h3>
 
                   <a href="#" class="card-link">Component Breakdown</a>
@@ -636,7 +639,7 @@ THE SYSTEM HAS THE CAPABILITY TO SLOW DOWN THE VEHICLE'S SPEED. THIS FEATURE IS 
                   <p class="card-tag">TECH STACKS USED</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Tech Stack Overview</a>
+                    <a href="#" class="card-title" style="color:#003153;">Tech Stack Overview</a>
                   </h3>
 
                   <a href="#" class="card-link">In-Depth Tech Analysis</a>
@@ -659,7 +662,7 @@ THE SYSTEM HAS THE CAPABILITY TO SLOW DOWN THE VEHICLE'S SPEED. THIS FEATURE IS 
                   <p class="card-tag"> USE CASES</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Use Case Showcase</a>
+                    <a href="#" class="card-title" style="color: #003153;">Use Case Showcase</a>
                   </h3>
 
                   <a href="#" class="card-link">Use Case Breakdown</a>
@@ -682,7 +685,7 @@ THE SYSTEM HAS THE CAPABILITY TO SLOW DOWN THE VEHICLE'S SPEED. THIS FEATURE IS 
                   <p class="card-tag">WORK FLOW</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Workflow Visualization</a>
+                    <a href="#" class="card-title" style="color: #003153;">Workflow Visualization</a>
                   </h3>
 
                   <a href="#" class="card-link">Workflow Steps Breakdown</a>
@@ -705,7 +708,7 @@ THE SYSTEM HAS THE CAPABILITY TO SLOW DOWN THE VEHICLE'S SPEED. THIS FEATURE IS 
                   <p class="card-tag">WORKFLOW</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Workflow Visualization</a>
+                    <a href="#" class="card-title" >Workflow Visualization</a>
                   </h3>
 
                   <a href="#" class="card-link">Workflow Steps Breakdown</a>
@@ -810,20 +813,17 @@ THE SYSTEM HAS THE CAPABILITY TO SLOW DOWN THE VEHICLE'S SPEED. THIS FEATURE IS 
 
                     <span class="span">Read More</span>
                   </a>
-
                 </div>
-
               </div>
             </li>
-
           </ul>
-
         </div>
       </section>
       
       <!--
         - #REVIEW SECTION
       -->
+      
       <div class="container1" style="background-color:hsl(203deg 93.86% 64.11%);">
         <div class="container__left" style="font-size: larger;">
           <br>
@@ -873,7 +873,7 @@ THE SYSTEM HAS THE CAPABILITY TO SLOW DOWN THE VEHICLE'S SPEED. THIS FEATURE IS 
                   I absolutely loved working with the Filament team. Complete
                   experts at what they do!
                 </p>
-                <h4>-<strong>Harinder Tyagi</strong></h4>
+                <h4 style="font-size: 16px;">-<strong>Harinder Tyagi</strong></h4>
               </div>
             </div>
           </div>
@@ -990,6 +990,14 @@ THE SYSTEM HAS THE CAPABILITY TO SLOW DOWN THE VEHICLE'S SPEED. THIS FEATURE IS 
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+      let progressHeight = (window.pageYOffset/totalHeight)*100;
+      progressHeight = progressHeight+"%";
+    }
+  </script>
 
 </body>
 
