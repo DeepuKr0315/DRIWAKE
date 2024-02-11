@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>database</title>
+    <style>
+        .active-dot {
+            width: 10px;
+            height: 10px;
+            background-color: #00ff00; /* Green color for the dot */
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e1e;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        #left-section {
+            flex: 1;
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+        }
+
+        #right-section {
+            flex: 3;
+            background-color: #2e2e2e;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #fff;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #555;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #777;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #444;
+            padding: 8px;
+            text-align: left;
+        }
+        /* Add styles for the circular image */
+        .profile-image {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          margin-right: 10px;
+          object-fit: cover; /* Maintain aspect ratio and cover the container */
+        }
+
+
+        /* Dark mode toggle button */
+        #darkModeToggle {
+            background-color: #555;
+            border: none;
+            color: #fff;
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #darkModeToggle:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="left-section">
+        <h1>driwake</h1>
+        <button onclick="navigateToHome()">Home</button>
+
+        <button>Profile</button>
+        <button>Settings</button>
+        <button onclick="logout()">Logout</button>
+    <script>
+        function navigateToHome() {
+        // Redirect to index.html
+        window.location.href = 'index.html';
+        }
+    function logout() {
+        // Close the current webpage
+        //window.close();
+    
+        // Alternatively, you can use the following to navigate back to the previous page
+         history.back();
+    }
+    </script>
+
+    </div>
+
+    <div id="right-section">
+        <h1>Admin Panel</h1>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>#3412</td>
+                <td>
+                    <img class="profile-image" src="assets\images\akash .jpg" alt="Profile Image">
+                    Akash
+                </td>
+                <td>Sabzi Mandi Kanpur</td>
+                <td><span class="active-dot"></span>Active</td>
+                
+            </tr>
+            <tr>
+                <td>#3413</td>
+                <td>
+                    <img class="profile-image" src="assets\images\f1.jpg" alt="Profile Image">
+                    Pavan
+                </td>
+                <td>Chowki Thana Panki </td>
+                <td><span class="active-dot"></span>Active</td>
+            </tr>
+            <tr>
+                <td>#3414</td>
+                <td>
+                    <img class="profile-image" src="assets\images\f2.jpg" alt="Profile Image">
+                   Mayur
+                </td>
+                <td>Dehradun Garden  Kanpur</td>
+                <td><span class="active-dot"></span>Active</td>
+            </tr>
+            <tr>
+                <td>#3415</td>
+                <td>
+                    <img class="profile-image" src="assets\images\f3.jpg" alt="Profile Image">
+                    Mehul
+                </td>
+                <td>Duhai Gaziabad</td>
+                <td><span class="active-dot"></span>Active</td>
+            </tr>
+            <tr>
+                <td>#3416</td>
+                <td>
+                    <img class="profile-image" src="assets\images\4.jpg" alt="Profile Image">
+                    Rishab
+                </td>
+                <td>Tehri Rai gadh</td>
+                <td><span class="active-dot"></span>Active</td>
+            </tr>
+            <tr>
+                <td>#3417</td>
+                <td>
+                    <img class="profile-image" src="assets\images\5.jpg" alt="Profile Image">
+                    Rohit
+                </td>
+                <td>Tulsi Nagar </td>
+                <td><span class="active-dot"></span>Active</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
