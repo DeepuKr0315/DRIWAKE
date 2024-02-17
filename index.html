@@ -7,25 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DRIWAKE - Aware To Beware</title>
 
-  <!-- 
-    - favicon
-  -->
+  <!--- favicon --->
   <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - custom css link
-  -->
+  <!--- custom css link --->
   <link rel="stylesheet" href="style.css">
 
-  <!--
-    - google font link
-  -->
+  <!--- google font link --->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- 
     - preload images
   -->
@@ -35,7 +26,6 @@
 
   <div id="progressbar"></div>
   <div id="scrollpath"></div>
-
   <!-- 
     - #HEADER
   -->
@@ -43,9 +33,11 @@
   <header class="header" data-header>
     <div class="container">
 
-      <h1>
-        <a href="#"><img src=".\images\logoo.jpg" style="width: 120px;"></a>
-      </h1>
+      <div class="image-cropper">
+        <h1>
+          <a href="#"><img src=".\images\logoo.jpg" style="width: 120px;" class="profile-pic"></a>
+        </h1>
+      </div>
 
       <nav class="navbar" data-navbar>
 
@@ -136,12 +128,10 @@
         - #HERO
       -->
 
-      <section class="section hero" aria-label="home" id="home"
-        style="background-image: url('images/hero-banner.jpg')">
+      <section class="section hero" aria-label="home" id="home" style="background-image: url('images/hero-banner.jpg')">
         <div class="container">
 
           <div class="hero-content">
-
             <h2 class="h1 hero-title">
               <span class="span">THE BEST DRIVERS ARE AWARE THAT </span> THEY MUST BEWARE
             </h2>
@@ -150,18 +140,13 @@
               <strong>
                 STAY ALERT - STAY SAFE
               </strong>
-            </p>           
-            <img src="images\logoo.jpg" width="116" height="116" loading="lazy" alt="Driwake"
-              class="hero-shape shape-2">
-
+            </p>   
+            <img src="images\logoo.jpg" width="116" height="116" loading="lazy" alt="Driwake" class="hero-shape shape-2">
           </div>
 
         </div>
+      
       </section>
-
-
-
-
 
       <!-- 
         - #ABOUT
@@ -187,7 +172,7 @@
 
             <h2 class="h2 section-title">VigilanceCab - Fortifying Drivers, Enriching the Expedition </h2>
 
-            <p class="section-text">
+            <p class="section-text" style="font-size: 16px;">
               Motive:
             </p>
 
@@ -198,7 +183,7 @@
                   <ion-icon name="chevron-forward"></ion-icon>
                 </div>
 
-                <p class="about-text">
+                <p class="about-text" style="font-size: large;">
                   <strong>
                     Enhancing Driver Well-being:
                   </strong>
@@ -211,7 +196,7 @@
                   <ion-icon name="chevron-forward"></ion-icon>
                 </div>
 
-                <p class="about-text">
+                <p class="about-text" style="font-size: large;">
                   <strong>
                     Accident Prevention:
                   </strong>
@@ -224,7 +209,7 @@
                   <ion-icon name="chevron-forward"></ion-icon>
                 </div>
 
-                <p class="about-text">
+                <p class="about-text" style="font-size: large;">
                   <strong>
                     Real-time Monitoring:
                   </strong>
@@ -237,7 +222,7 @@
                   <ion-icon name="chevron-forward"></ion-icon>
                 </div>
 
-                <p class="about-text">
+                <p class="about-text" style="font-size: large;">
                   <strong>
                     Proactive Intervention:
                   </strong>
@@ -255,11 +240,11 @@
                     <ion-icon name="chevron-forward"></ion-icon>
                   </div>
   
-                  <p class="about-text">
+                  <p class="about-text" style="font-size: large;">
                     <strong>
                       Improved Driver Safety:
                     </strong>
-                  Reducing the likelihood of accidents caused by compromised driver health and alertness.
+                    Reducing the likelihood of accidents caused by compromised driver health and alertness.
                   </p>
                 </li>
                 <li class="about-item">
@@ -267,7 +252,7 @@
                   <ion-icon name="chevron-forward"></ion-icon>
                 </div>
 
-                <p class="about-text">
+                <p class="about-text" style="font-size: large;">
                   <strong>
                     Operational Efficiency:
                   </strong>
@@ -279,11 +264,11 @@
                   <ion-icon name="chevron-forward"></ion-icon>
                 </div>
 
-                <p class="about-text">
+                <p class="about-text" style="font-size: large;">
                   <strong>
                     Health-conscious Fleet Management:
                   </strong>
-                  Empowering fleet managers to make informed decisions based on real-time data on driver well-being.
+                    Empowering fleet managers to make informed decisions based on real-time data on driver well-being.
                 </p>
               </li>
               <li class="about-item">
@@ -291,7 +276,7 @@
                   <ion-icon name="chevron-forward"></ion-icon>
                 </div>
 
-                <p class="about-text">
+                <p class="about-text" style="font-size: large;">
                   <strong>
                     Enhanced Driver Experience:
                   </strong>
@@ -324,7 +309,7 @@
           <h2 class="h2 section-title">
            Driver Drowsiness Alert SystemS</h2>
 
-          <p class="section-text">
+          <p class="section-text" style="font-size: large;">
             DRIWAKE's multifaceted approach combines driver drowsiness mitigation, collision alerts, smart speed control, real-time location tracking, and emergency response integration to significantly enhance road safety and reduce accidents caused by both harmful gases and driver fatigue within the truck cabin.
 
 
@@ -847,7 +832,7 @@ THE SYSTEM HAS THE CAPABILITY TO SLOW DOWN THE VEHICLE'S SPEED. THIS FEATURE IS 
                   We had a great time collaboraring with the Filament team. They
                   have my high recommendation!
                 </p>
-                <h4>-<strong> Rakesh Kushwaha</strong> </h4>
+                <h4 style="font-size: 16px;">-<strong> Rakesh Kushwaha</strong> </h4>
               </div>
             </div>
           </div>
@@ -860,7 +845,7 @@ THE SYSTEM HAS THE CAPABILITY TO SLOW DOWN THE VEHICLE'S SPEED. THIS FEATURE IS 
                   The team drastically improved our product's user experience &
                   increased our business outreach.
                 </p>
-                <h4>- <strong>Jagpal Singh</strong></h4>
+                <h4 style="font-size: 16px;">- <strong>Jagpal Singh</strong></h4>
               </div>
             </div>
           </div>
